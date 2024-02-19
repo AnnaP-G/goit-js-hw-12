@@ -64,7 +64,6 @@ btnElem.addEventListener('click', async () => {
 })
 
 async function getPhotoByName() {
-    gallery.innerHTML = '';
     const urlParams = new URLSearchParams(searchParams);
     const response = await axios.get(`https://pixabay.com/api/?${urlParams}`)
     return response.data;
